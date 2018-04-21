@@ -6,7 +6,7 @@ This is the demo of Vert.
 
  - `git clone` && `npm install`
 
- - `npm run demo`
+ - `npm start`
 
 ## License
 

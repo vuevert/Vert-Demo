@@ -1,4 +1,6 @@
+import 'reflect-metadata'
 import 'babel-polyfill'
+
 import './startup'
 
 import { App } from '@vert/core'
@@ -26,7 +28,7 @@ const router = new Router({
   ]
 })
 
-const app = new App<Router, typeof store>({
+const app = new App({
   element: '#app-tour-of-hero',
   name: 'tour-of-hero',
   rootComponent: RootComponent,

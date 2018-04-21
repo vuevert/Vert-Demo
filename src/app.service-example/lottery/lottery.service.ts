@@ -1,6 +1,6 @@
 import { Injectable } from '@vert/core'
 
-@Injectable
+@Injectable()
 class LotteryService {
   name: string = 'lottery'
   count: number = 10

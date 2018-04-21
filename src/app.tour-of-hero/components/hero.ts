@@ -1,4 +1,5 @@
 import { AppComponent, Component } from '@vert/core'
+import { Hero } from '../models/hero'
 
 @Component({
   beforeRouteEnter (to, from, next) {
@@ -12,7 +13,7 @@ export default class HeroComponent extends AppComponent {
   }
 
   get hero () {
-    const allHeroes = this.$store.getters.getAllHeroes
+    const allHeroes = this.$store.getters.getAllHeroes as Hero[]
     return allHeroes.filter(item => item.name === this.heroName)[0]
   }
 
