@@ -7,12 +7,14 @@ import { Pothouse } from './services/pothouse'
 
 Vue.use(VueRouter)
 
-const http = new Http()
-http['wow'] = 'http'
-App.addSingleton(Http, http)
+const injector = Injector.create(Http, Pothouse)
+const http = injector.get(Http)
+const potHouse = injector.get(Pothouse)
 
-const potHouse = new Pothouse(http)
+http['wow'] = 'http'
 potHouse['wow'] = 'pothouse'
+
+App.addSingleton(Http, http)
 App.addSingleton(Pothouse, potHouse)
 
 ;(() => {
