@@ -2,10 +2,8 @@ import { AppComponent, Component } from '@vert/core'
 
 import { LotteryService } from './lottery/lottery.service'
 
-@Component({
-  providers: [LotteryService]
-})
-export class RootComponent extends AppComponent {
+@Component
+export default class RootComponent extends AppComponent {
   get lotteryName () {
     return this.lotteryService.name
   }
