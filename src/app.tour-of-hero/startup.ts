@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import { App, Injectable, Injector } from '@vert/core'
+import { App, Injector } from '@vert/core'
 import { Http } from '@vert/services'
 import { Pothouse } from './services/pothouse'
 

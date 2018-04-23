@@ -12,7 +12,7 @@ Vue.use(Vuex)
 const app01 = new App({
   element: '#app-01',
   name: 'app-01',
-  rootComponent: App01,
+  RootComponent: App01,
   store: new Vuex.Store({
     state: { name: 'App 01' },
     getters: {
@@ -24,7 +24,7 @@ const app01 = new App({
 const app02 = new App({
   element: '#app-02',
   name: 'app-02',
-  rootComponent: App02,
+  RootComponent: App02,
   store: new Vuex.Store({
     state: { name: 'App 02' },
     getters: {

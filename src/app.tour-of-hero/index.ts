@@ -31,7 +31,7 @@ const router = new Router({
 const app = new App({
   element: '#app-tour-of-hero',
   name: 'tour-of-hero',
-  rootComponent: RootComponent,
+  RootComponent,
   router,
   store
 })

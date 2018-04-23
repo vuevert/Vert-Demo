@@ -10,4 +10,4 @@ This is the demo of Vert.
 
 ## License
 
-MIT @ LancerComet
+MIT

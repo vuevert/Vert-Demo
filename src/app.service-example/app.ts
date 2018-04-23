@@ -6,7 +6,7 @@ import RootComponent from './root-component.vue'
 
 const app = new App({
   element: '#demo-app',
-  rootComponent: RootComponent
+  RootComponent
 })
 
 app.start()
